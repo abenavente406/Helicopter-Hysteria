@@ -17,6 +17,7 @@ namespace Helicopter_Hysteria
     {
         public static int GAME_WIDTH = 1280;
         public static int GAME_HEIGHT = 720;
+        public static ContentManager content;
         public GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         GameStateManager manager;
@@ -33,11 +34,13 @@ namespace Helicopter_Hysteria
 
         protected override void Initialize()
         {
+            content = Content;
+
             Components.Add(new InputHandler(this));
 
             manager = new GameStateManager(this);
             Components.Add(manager);
-            manager.ChangeState(new TitleState(this, manager));
+            manager.ChangeState(new GameplayState(this, manager));
 
             base.Initialize();
         }

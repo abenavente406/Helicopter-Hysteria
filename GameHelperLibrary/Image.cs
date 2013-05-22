@@ -23,7 +23,7 @@ namespace GameHelperLibrary
         public int Width { get { return ImageTexture.Width; } }
         public int Height { get { return ImageTexture.Height; } }
 
-        public Color Tint { get { return tint; } }
+        public Color Tint { get { return tint; } set { tint = value; } }
         #endregion
 
         /// <summary>
@@ -56,10 +56,14 @@ namespace GameHelperLibrary
         }
         public void Draw(SpriteBatch spriteBatch, Vector2 pos, bool flipped = false, float scale = 1.0f)
         {
+            Draw(spriteBatch, pos, Tint, flipped, scale);
+        }
+        public void Draw(SpriteBatch spriteBatch, Vector2 pos, Color tint, bool flipped = false, float scale = 1.0f)
+        {
             if (flipped)
-                spriteBatch.Draw(_image, pos, null, Color.White, 0, Vector2.Zero, scale, SpriteEffects.FlipHorizontally, 0f);
+                spriteBatch.Draw(_image, pos, null, tint, 0, Vector2.Zero, scale, SpriteEffects.FlipHorizontally, 0f);
             else
-                spriteBatch.Draw(_image, pos, null, Color.White, 0, Vector2.Zero, scale, SpriteEffects.None, 0f);
+                spriteBatch.Draw(_image, pos, null, tint, 0, Vector2.Zero, scale, SpriteEffects.None, 0f);
         }
 
     }
