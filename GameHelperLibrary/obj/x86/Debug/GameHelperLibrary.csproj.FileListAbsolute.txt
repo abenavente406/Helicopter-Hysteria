@@ -10,3 +10,9 @@ C:\Users\Anthony Benavente\Git\GameHelperLibrary\GameHelperLibrary\obj\x86\Debug
 C:\Users\Anthony Benavente\Git\GameHelperLibrary\GameHelperLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Anthony Benavente\Git\GameHelperLibrary\GameHelperLibrary\obj\x86\Debug\GameHelperLibrary.dll
 C:\Users\Anthony Benavente\Git\GameHelperLibrary\GameHelperLibrary\obj\x86\Debug\GameHelperLibrary.pdb
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\bin\x86\Debug\GameHelperLibrary.dll
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\bin\x86\Debug\GameHelperLibrary.pdb
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\obj\x86\Debug\GameHelperLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\obj\x86\Debug\GameHelperLibrary.dll
+C:\Users\Griffin\Helicopter-Hysteria\GameHelperLibrary\obj\x86\Debug\GameHelperLibrary.pdb
