@@ -10,3 +10,5 @@ C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopte
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\defaultFont.xnb
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\missile.xnb
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\bullet.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\titleScreen copy.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\skyFall.xnb

@@ -81,6 +81,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="States\BaseGameState.cs" />
     <Compile Include="States\GameplayState.cs" />
+    <Compile Include="States\IntroState.cs" />
     <Compile Include="States\TitleState.cs" />
     <Compile Include="Weapons\GatlingGun.cs" />
     <Compile Include="Weapons\MissileLauncher.cs" />

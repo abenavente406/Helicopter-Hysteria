@@ -40,7 +40,7 @@ namespace Helicopter_Hysteria
 
             manager = new GameStateManager(this);
             Components.Add(manager);
-            manager.ChangeState(new GameplayState(this, manager));
+            manager.ChangeState(new TitleState(this, manager));
 
             base.Initialize();
         }

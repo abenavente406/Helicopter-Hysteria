@@ -37,6 +37,24 @@
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\bullet.xnb</Output>
       <Time>2013-05-22T17:07:30.6176005-04:00</Time>
     </Item>
+    <Item>
+      <Source>titleScreen copy.png</Source>
+      <Name>titleScreen copy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\titleScreen copy.xnb</Output>
+      <Time>2013-05-22T17:33:46.555739-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skyFall.spritefont</Source>
+      <Name>skyFall</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\skyFall.xnb</Output>
+      <Time>2013-05-22T17:35:58.6652952-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2E1EE5F0-8F25-4798-A7FC-FAF82D646BB7}</ContentProjectGUID>
