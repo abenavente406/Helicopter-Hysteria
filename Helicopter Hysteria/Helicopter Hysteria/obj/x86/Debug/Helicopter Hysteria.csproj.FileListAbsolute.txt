@@ -1,0 +1,12 @@
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\background.xnb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\helicopter2.xnb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\lives.xnb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Titlescreen.xnb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Helicopter Hysteria.exe
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Helicopter Hysteria.pdb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\GameHelperLibrary.dll
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\GameHelperLibrary.pdb
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\obj\x86\Debug\Helicopter Hysteria.csprojResolveAssemblyReference.cache
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\obj\x86\Debug\Helicopter Hysteria.exe
+C:\Users\Griffin\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\obj\x86\Debug\Helicopter Hysteria.pdb
