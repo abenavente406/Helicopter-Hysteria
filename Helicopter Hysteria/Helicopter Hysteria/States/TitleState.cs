@@ -80,12 +80,12 @@ namespace Helicopter_Hysteria.States
             skyFall = content.Load<SpriteFont>("skyFall");
             spriteBatch.Begin();
             {
-               spriteBatch.Draw(titleScreen, titleRectangle, Color.White);
-               spriteBatch.DrawString(skyFall, "Start", new Vector2(550, 300), Color.Black);
-               spriteBatch.DrawString(skyFall, "Exit", new Vector2(590, 400), Color.Black);
+                spriteBatch.Draw(titleScreen, titleRectangle, Color.White);
+                spriteBatch.DrawString(skyFall, "Start", new Vector2(550, 300), Color.Black);
+                spriteBatch.DrawString(skyFall, "Exit", new Vector2(590, 400), Color.Black);
                 testChangeStateButton.Draw(spriteBatch, gameTime);
                 testQuitButton.Draw(spriteBatch, gameTime);
-
+                FadeOutRect.Draw(spriteBatch, Vector2.Zero, FadeOutColor);
             }
             spriteBatch.End();
 
@@ -103,7 +103,7 @@ namespace Helicopter_Hysteria.States
            
             var btn = (Button)sender;
             if (btn.Name == "btnTest")
-                SwitchState(new GameplayState(gameRef, StateManager));
+                SwitchState(new IntroState(gameRef, StateManager));
             else if (btn.Name == "btnQuit")
                 gameRef.Exit();
         }

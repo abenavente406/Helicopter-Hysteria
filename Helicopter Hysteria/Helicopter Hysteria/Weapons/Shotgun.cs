@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Helicopter_Hysteria.Entities;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Helicopter_Hysteria.Weapons
 {
@@ -14,19 +16,20 @@ namespace Helicopter_Hysteria.Weapons
 
         protected override void SetBulletTexture()
         {
-            throw new NotImplementedException();
+            bulletTex = Game1.content.Load<Texture2D>("bullet");
         }
 
         protected override void OnFire(Player sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (!fired)
+                Shoot();
         }
 
         public override void Shoot()
         {
+            bullets.Add(new Bullet(owner, MathHelper.ToRadians(13) + owner.Angle, bulletTex));
             bullets.Add(new Bullet(owner, bulletTex));
-            bullets.Add(new Bullet(owner, bulletTex));
-            bullets.Add(new Bullet(owner, bulletTex));
+            bullets.Add(new Bullet(owner, MathHelper.ToRadians(-13) + owner.Angle, bulletTex));
         }
     }
 }

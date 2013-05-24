@@ -41,7 +41,7 @@ namespace Helicopter_Hysteria.Entities
             get { return sprite; }
         }
 
-        public Rectangle Bounds
+        public virtual Rectangle Bounds
         {
             get { return new Rectangle((int)pos.X, (int)pos.Y, width, height); }
         }

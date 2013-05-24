@@ -30,6 +30,11 @@ namespace Helicopter_Hysteria.Weapons
             get { return bullets; }
         }
 
+        public float Damage
+        {
+            get { return damage; }
+        }
+
         public Weapon(Player owner, Keys shootKey, float damage, float coolDownTime)
         {
             this.owner = owner;
@@ -51,7 +56,7 @@ namespace Helicopter_Hysteria.Weapons
             if (coolDownTimeTicks > 0) 
                 coolDownTimeTicks -= (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-            if (InputHandler.KeyDown(shootKey))
+            if (InputHandler.KeyDown(shootKey) || InputHandler.ButtonDown(Buttons.RightTrigger, owner.PlayerIndex))
             {
                 if (coolDownTimeTicks < 0)
                 {
@@ -68,7 +73,18 @@ namespace Helicopter_Hysteria.Weapons
             bullets.ForEach((b) =>
             {
                 b.Update(gameTime);
-                if (b.DestroyMe) bullets.Remove(b);
+                if (b.DestroyMe)
+                {
+                    if (this.GetType() == typeof(MissileLauncher))
+                    {
+                        EffectManager.AddExplosion(b.Position, Vector2.Zero, 15, 20, 4, 6, 40f, 50, new Color(1.0f, 0.3f, 0f, 0.5f), Color.Black * 0f);
+                    }
+                    else
+                    {
+                        EffectManager.AddSparksEffect(b.Position, new Vector2(400));
+                    }
+                    bullets.Remove(b);
+                }
             });
         }
 

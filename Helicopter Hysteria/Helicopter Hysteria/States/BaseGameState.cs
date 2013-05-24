@@ -5,6 +5,7 @@ using System.Text;
 using GameHelperLibrary;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Helicopter_Hysteria.States
 {
@@ -12,6 +13,7 @@ namespace Helicopter_Hysteria.States
     {
         protected Game1 gameRef;
         protected ContentManager content;
+        protected SpriteFont defaultFont;
 
         public BaseGameState(Game game, GameStateManager manager)
             : base(game, manager)
@@ -24,6 +26,8 @@ namespace Helicopter_Hysteria.States
             base.LoadContent();
 
             content = gameRef.Content;
+
+            defaultFont = content.Load<SpriteFont>("defaultFont");
         }
 
         protected void SwitchState(GameState targetState)

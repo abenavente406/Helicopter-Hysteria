@@ -18,7 +18,7 @@ namespace Helicopter_Hysteria
         public static int GAME_WIDTH = 1280;
         public static int GAME_HEIGHT = 720;
         public static ContentManager content;
-        public GraphicsDeviceManager graphics;
+        public static GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         GameStateManager manager;
 

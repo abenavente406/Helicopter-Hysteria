@@ -73,13 +73,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button.cs" />
+    <Compile Include="EffectManager.cs" />
     <Compile Include="Entities\Bullet.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\Particle.cs" />
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="States\BaseGameState.cs" />
+    <Compile Include="States\DevGameplayState.cs" />
+    <Compile Include="States\GameoverState.cs" />
     <Compile Include="States\GameplayState.cs" />
     <Compile Include="States\IntroState.cs" />
     <Compile Include="States\TitleState.cs" />
