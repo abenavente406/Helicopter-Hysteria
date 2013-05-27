@@ -117,7 +117,7 @@ namespace Helicopter_Hysteria.Weather
                             else
                             {
                                 var end = new Vector2(rand.Next(Game1.GAME_WIDTH), rand.Next(Game1.GAME_HEIGHT) / 2);
-                                bolts.Add(new BranchLightning(start, end));
+                                bolts.Add(new LightningBolt(start, end));
                             }
 
                             deltaTime = 0;

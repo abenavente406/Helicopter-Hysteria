@@ -15,12 +15,12 @@ TODO-List
     <li><del>Lives</del> - <i>We are no longer using lives. Only health.</i></li>
 </ol>
 
-<ol><strong>&#x274f Add Weapons</strong>
+<ol><strong>&#9745 Add Weapons</strong>
     <li>&#9745 Pistol</li>
     <li>&#9745 Missile Launcher</li>
     <li>&#9745 Shotgun</li>
     <li>&#9745 Gatling Gun</li>
-    <li>&#x274f Laser</li>
+    <li>&#9745 Laser</li>
 </ol>
 
 <ul><strong>&#x274f Add Power Ups</strong>

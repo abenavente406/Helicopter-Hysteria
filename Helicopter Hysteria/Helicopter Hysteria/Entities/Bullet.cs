@@ -21,6 +21,8 @@ namespace Helicopter_Hysteria.Entities
         public bool DestroyMe { get; set; }
         public Vector2 Origin { get; set; }
 
+        private Color tint = Color.White;
+
         public Vector2 Velocity
         {
             get { return vel; }
@@ -30,7 +32,7 @@ namespace Helicopter_Hysteria.Entities
         public Bullet(Player owner, Texture2D texture)
             : this(owner, owner.Angle, texture) { }
 
-        public Bullet(Player owner, float angle, Texture2D texture, float speed = 10f)
+        public Bullet(Player owner, float angle, Texture2D texture, float speed = 10f, float r = 1, float g = 1, float b = 1)
             : base(owner.Position)
         {
             this.texture = texture;
@@ -46,6 +48,8 @@ namespace Helicopter_Hysteria.Entities
             flipped = owner.Flipped;
 
             Origin = new Vector2(width / 2, height / 2);
+
+            tint = new Color(r, g, b);
         }
 
         protected override void SetTexture()
@@ -78,7 +82,7 @@ namespace Helicopter_Hysteria.Entities
         {
             SpriteEffects e = flipped ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
 
-            batch.Draw(sprite.ImageTexture, Position, null, Color.White,
+            batch.Draw(sprite.ImageTexture, Position, null, tint,
                  angle, Origin, 1, e, 0f);
         }
 

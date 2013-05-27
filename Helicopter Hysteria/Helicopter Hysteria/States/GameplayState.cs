@@ -60,7 +60,7 @@ namespace Helicopter_Hysteria.States
             EffectManager.Initialize(content.Load<Texture2D>("particle"), explode);
 
             WeatherManager.Initialize(gameRef);
-            WeatherManager.ChangeWeather(Weather.Weather.STORM);
+            WeatherManager.ChangeWeather(Weather.Weather.NORMAL);
 
             powerUpMgr = new PowerUpMgr(gameRef);
 

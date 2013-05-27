@@ -21,6 +21,7 @@ namespace GameHelperLibrary.Shapes
         private int      _radius   = 0;
         private Color     color    = Color.White;
 
+        public Texture2D Texture { get { return texture; } }
         public Vector2 Position { get { return _position; } set { _position = value; } }
         public int     Radius   { get { return _radius; } }
 

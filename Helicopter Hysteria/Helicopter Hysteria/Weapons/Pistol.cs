@@ -11,7 +11,7 @@ namespace Helicopter_Hysteria.Weapons
     public class Pistol : Weapon
     {
         public Pistol(Player owner, Keys shootKey)
-            : base(owner, shootKey, 5f, 50f)
+            : base(owner, shootKey, 10f, 100f)
         {
         
         }
@@ -23,8 +23,7 @@ namespace Helicopter_Hysteria.Weapons
 
         protected override void OnFire(Player sender, EventArgs e)
         {
-            if (!fired)
-                Shoot();
+            Shoot();
         }
     }
 }

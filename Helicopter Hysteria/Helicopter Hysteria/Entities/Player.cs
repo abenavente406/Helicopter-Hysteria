@@ -167,7 +167,7 @@ namespace Helicopter_Hysteria.Entities
             {
                 throw new Exception("Unsupported PlayerIndex - please only use indeces one and two");
             }
-            equippedWeapon = new GatlingGun(this, shootingKey);
+            equippedWeapon = new LaserGun(this, shootingKey);
 
             font = Game1.content.Load<SpriteFont>("defaultFont");
 
@@ -245,16 +245,25 @@ namespace Helicopter_Hysteria.Entities
 
             foreach (Player p in GameplayState.Players)
             {
-                if (p == this) continue; 
+                if (p == this) continue;
 
-                p.equippedWeapon.Bullets.ForEach((b) =>
+                if (p.equippedWeapon.GetType() == typeof(LaserGun))
                 {
-                    if (b.Bounds.Intersects(Bounds))
-                    {
+                    var weapon = (LaserGun)p.equippedWeapon;
+                    if (weapon.Laser.Bounds.Intersects(Bounds) && weapon.Laser.IsActive)
                         Damage(p.equippedWeapon.Damage);
-                        b.DestroyMe = true;
-                    }
-                });
+                }
+                else
+                {
+                    p.equippedWeapon.Bullets.ForEach((b) =>
+                    {
+                        if (b.Bounds.Intersects(Bounds))
+                        {
+                            Damage(p.equippedWeapon.Damage);
+                            b.DestroyMe = true;
+                        }
+                    });
+                }
             }
         }
 

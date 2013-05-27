@@ -73,6 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Art.cs" />
+    <Compile Include="Entities\Laser.cs" />
+    <Compile Include="Weapons\LaserGun.cs" />
     <Compile Include="Weather\BranchLightning.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="EffectManager.cs" />
