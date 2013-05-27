@@ -145,6 +145,60 @@
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\ArrowKey.xnb</Output>
       <Time>2013-05-23T20:59:21.9904879-04:00</Time>
     </Item>
+    <Item>
+      <Source>Power Ups\healthPowerup.png</Source>
+      <Name>Power Ups\healthPowerup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\healthPowerup.xnb</Output>
+      <Time>2013-05-24T13:44:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Power Ups\missilesPowerup.png</Source>
+      <Name>Power Ups\missilesPowerup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\missilesPowerup.xnb</Output>
+      <Time>2013-05-24T13:44:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Power Ups\speedPowerup.png</Source>
+      <Name>Power Ups\speedPowerup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\speedPowerup.xnb</Output>
+      <Time>2013-05-24T13:44:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Weather\Half Circle.png</Source>
+      <Name>Weather\Half Circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Half Circle.xnb</Output>
+      <Time>2012-08-30T06:49:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Weather\Lightning Segment.png</Source>
+      <Name>Weather\Lightning Segment</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Lightning Segment.xnb</Output>
+      <Time>2012-08-30T06:49:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Weather\Pixel.png</Source>
+      <Name>Weather\Pixel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Pixel.xnb</Output>
+      <Time>2012-08-30T14:16:56-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2E1EE5F0-8F25-4798-A7FC-FAF82D646BB7}</ContentProjectGUID>

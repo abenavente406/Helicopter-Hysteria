@@ -194,6 +194,8 @@ namespace Helicopter_Hysteria.Entities
         #region Update and Input
         public override void Update(GameTime gameTime)
         {
+            maxspeed = !superSpeed ? 5f : 10f;
+
             var epsilon = .005f;
 
             if (!GamePad.GetState(playerIndex, GamePadDeadZone.Circular).IsConnected)

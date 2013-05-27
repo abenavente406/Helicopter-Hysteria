@@ -11,7 +11,7 @@ namespace Helicopter_Hysteria.Weapons
     public class MissileLauncher : Weapon
     {
         public MissileLauncher(Player owner, Keys shootKey)
-            : base(owner, shootKey, 30f, 650f)
+            : base(owner, shootKey, 70f, 500F)
         {
         }
 
@@ -22,8 +22,7 @@ namespace Helicopter_Hysteria.Weapons
 
         protected override void OnFire(Player sender, EventArgs e)
         {
-            if (!fired)
-                Shoot();
+            Shoot();
         }
     }
 }

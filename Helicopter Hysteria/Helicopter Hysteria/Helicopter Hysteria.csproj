@@ -72,15 +72,24 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Art.cs" />
+    <Compile Include="Weather\BranchLightning.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="EffectManager.cs" />
     <Compile Include="Entities\Bullet.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Particle.cs" />
     <Compile Include="Entities\Player.cs" />
+    <Compile Include="PowerUps\Health.cs" />
+    <Compile Include="Weather\ILightning.cs" />
+    <Compile Include="Weather\LightningBolt.cs" />
+    <Compile Include="PowerUps\MissilePowerUp.cs" />
+    <Compile Include="PowerUps\PowerUp.cs" />
+    <Compile Include="PowerUps\PowerUpMgr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="PowerUps\Speed.cs" />
     <Compile Include="States\BaseGameState.cs" />
     <Compile Include="States\DevGameplayState.cs" />
     <Compile Include="States\GameoverState.cs" />
@@ -92,6 +101,7 @@
     <Compile Include="Weapons\Pistol.cs" />
     <Compile Include="Weapons\Shotgun.cs" />
     <Compile Include="Weapons\Weapon.cs" />
+    <Compile Include="Weather\WeatherManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
