@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\helicopter2.xnb</Output>
-      <Time>2013-05-23T20:14:51.7774702-04:00</Time>
+      <Time>2013-05-27T16:50:26.1898664-04:00</Time>
     </Item>
     <Item>
       <Source>defaultFont.spritefont</Source>
@@ -17,7 +17,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\defaultFont.xnb</Output>
-      <Time>2013-05-22T16:07:00.5269712-04:00</Time>
+      <Time>2013-05-27T16:50:26.1848661-04:00</Time>
     </Item>
     <Item>
       <Source>missile.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\missile.xnb</Output>
-      <Time>2013-05-22T16:55:20.2128237-04:00</Time>
+      <Time>2013-05-27T16:50:26.1908664-04:00</Time>
     </Item>
     <Item>
       <Source>bullet.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\bullet.xnb</Output>
-      <Time>2013-05-22T17:07:30.6176005-04:00</Time>
+      <Time>2013-05-27T16:50:26.1798658-04:00</Time>
     </Item>
     <Item>
       <Source>titleScreen copy.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\titleScreen copy.xnb</Output>
-      <Time>2013-05-22T17:33:46.555739-04:00</Time>
+      <Time>2013-05-27T16:50:26.2258684-04:00</Time>
     </Item>
     <Item>
       <Source>skyFall.spritefont</Source>
@@ -53,7 +53,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\skyFall.xnb</Output>
-      <Time>2013-05-22T23:19:22.7873822-04:00</Time>
+      <Time>2013-05-27T16:50:26.2138677-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\apocalypselondon.jpg</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\apocalypselondon.xnb</Output>
-      <Time>2013-05-22T23:19:22.7913824-04:00</Time>
+      <Time>2013-05-27T16:50:26.112862-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\background.jpg</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\background.xnb</Output>
-      <Time>2013-05-22T23:19:22.7933825-04:00</Time>
+      <Time>2013-05-27T16:50:26.1268628-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\IntroScreen.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\IntroScreen.xnb</Output>
-      <Time>2013-05-22T23:19:22.819384-04:00</Time>
+      <Time>2013-05-27T16:50:26.1048615-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\question mark.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\question mark.xnb</Output>
-      <Time>2013-05-22T23:19:22.8223842-04:00</Time>
+      <Time>2013-05-27T16:50:26.1278628-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\screen3.jpg</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\screen3.xnb</Output>
-      <Time>2013-05-22T23:19:22.8263844-04:00</Time>
+      <Time>2013-05-27T16:50:26.165865-04:00</Time>
     </Item>
     <Item>
       <Source>Screen Images\screen4.jpg</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Screen Images\screen4.xnb</Output>
-      <Time>2013-05-22T23:19:22.8283845-04:00</Time>
+      <Time>2013-05-27T16:50:26.1738655-04:00</Time>
     </Item>
     <Item>
       <Source>explosion.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\explosion.xnb</Output>
-      <Time>2013-05-23T17:51:29.8264395-04:00</Time>
+      <Time>2013-05-27T16:50:26.1868662-04:00</Time>
     </Item>
     <Item>
       <Source>particle.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\particle.xnb</Output>
-      <Time>2013-05-23T17:51:29.8294396-04:00</Time>
+      <Time>2013-05-27T16:50:26.2098675-04:00</Time>
     </Item>
     <Item>
       <Source>helicopter1.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\helicopter1.xnb</Output>
-      <Time>2013-05-23T20:14:02.5125837-04:00</Time>
+      <Time>2013-05-27T16:50:26.1878663-04:00</Time>
     </Item>
     <Item>
       <Source>ArrowKey.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\ArrowKey.xnb</Output>
-      <Time>2013-05-23T20:59:21.9904879-04:00</Time>
+      <Time>2013-05-27T16:50:26.0678594-04:00</Time>
     </Item>
     <Item>
       <Source>Power Ups\healthPowerup.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\healthPowerup.xnb</Output>
-      <Time>2013-05-24T13:44:56-04:00</Time>
+      <Time>2013-05-27T16:50:26.0858604-04:00</Time>
     </Item>
     <Item>
       <Source>Power Ups\missilesPowerup.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\missilesPowerup.xnb</Output>
-      <Time>2013-05-24T13:44:56-04:00</Time>
+      <Time>2013-05-27T16:50:26.0878605-04:00</Time>
     </Item>
     <Item>
       <Source>Power Ups\speedPowerup.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Power Ups\speedPowerup.xnb</Output>
-      <Time>2013-05-24T13:44:56-04:00</Time>
+      <Time>2013-05-27T16:50:26.0938609-04:00</Time>
     </Item>
     <Item>
       <Source>Weather\Half Circle.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Half Circle.xnb</Output>
-      <Time>2012-08-30T06:49:34-04:00</Time>
+      <Time>2013-05-27T16:50:26.1758656-04:00</Time>
     </Item>
     <Item>
       <Source>Weather\Lightning Segment.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Lightning Segment.xnb</Output>
-      <Time>2012-08-30T06:49:34-04:00</Time>
+      <Time>2013-05-27T16:50:26.1778657-04:00</Time>
     </Item>
     <Item>
       <Source>Weather\Pixel.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Pixel.xnb</Output>
-      <Time>2012-08-30T14:16:56-04:00</Time>
+      <Time>2013-05-27T16:50:26.1788657-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
