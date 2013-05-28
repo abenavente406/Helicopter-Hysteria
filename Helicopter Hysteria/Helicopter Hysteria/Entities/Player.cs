@@ -473,7 +473,7 @@ namespace Helicopter_Hysteria.Entities
 
             if (forceField)
             {
-                // TODO: Draw a force field texture over top the player texture
+                // TODO: Draw a NICE force field texture over top the player texture
                 batch.Draw(forceFieldTex, ForceFieldBounds, Color.White * .3f);
             }
 
