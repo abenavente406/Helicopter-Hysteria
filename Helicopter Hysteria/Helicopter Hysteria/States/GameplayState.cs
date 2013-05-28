@@ -87,7 +87,7 @@ namespace Helicopter_Hysteria.States
             {
                 p.Update(gameTime);
                 if (WeatherManager.WeatherType == Weather.Weather.STORM) WeatherManager.ApplyWind(p);
-                if (p.Dead) StateManager.ChangeState(new GameoverState(gameRef, StateManager));
+                if (p.IsDead) StateManager.ChangeState(new GameoverState(gameRef, StateManager));
             });
 
             EffectManager.Update(gameTime);

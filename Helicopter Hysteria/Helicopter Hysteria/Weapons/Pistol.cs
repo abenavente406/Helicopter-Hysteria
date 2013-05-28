@@ -11,7 +11,7 @@ namespace Helicopter_Hysteria.Weapons
     public class Pistol : Weapon
     {
         public Pistol(Player owner, Keys shootKey)
-            : base(owner, shootKey, 10f, 100f)
+            : base(owner, shootKey, 10f, 350f)
         {
         
         }

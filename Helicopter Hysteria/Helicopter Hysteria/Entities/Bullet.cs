@@ -50,6 +50,8 @@ namespace Helicopter_Hysteria.Entities
             Origin = new Vector2(width / 2, height / 2);
 
             tint = new Color(r, g, b);
+
+            homing = owner.Tracking;
         }
 
         protected override void SetTexture()
@@ -63,7 +65,7 @@ namespace Helicopter_Hysteria.Entities
             {
                 var target = GetNearestPlayer();
 
-                var direction = (target.Position + new Vector2(target.Width / 2, target.Height / 2)) - Position;
+                var direction = (target.Position) - Position;
                 direction.Normalize();
 
                 angle = dir < 0 ? (float)Math.Atan2(direction.Y, direction.X) - MathHelper.Pi :
