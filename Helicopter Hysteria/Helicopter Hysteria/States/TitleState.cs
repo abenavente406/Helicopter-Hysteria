@@ -14,11 +14,15 @@ namespace Helicopter_Hysteria.States
 {
     public class TitleState : BaseGameState
     {
-        Button testChangeStateButton;
-        Button testQuitButton;
+        Button playButton;
+        Button optionsButton;
+        Button quitButton;
         Texture2D titleScreen;
         public Rectangle titleRectangle;
         SpriteFont skyFall;
+
+        List<Button> buttons = new List<Button>();
+
         public TitleState(Game game, GameStateManager manager)
             : base(game, manager)
         {
@@ -28,40 +32,36 @@ namespace Helicopter_Hysteria.States
         {
             base.LoadContent();
             var content = gameRef.Content;
+
+            skyFall = content.Load<SpriteFont>("skyFall");
             titleScreen = content.Load<Texture2D>("titleScreen copy");
             titleRectangle = new Rectangle(0, 0, Game1.GAME_WIDTH, Game1.GAME_HEIGHT);
-            /****************************/
-            /** HOW TO CREATE A BUTTON **/
-            /****************************/
-            
-            /*****************************/
-            /********** Step 1 ***********/ 
-            /*** Initialize the button ***/
-            /*****************************/
-            // Parameter 1: Point that represents the location of the button (new Point(10, 0))
-            // Parameter 2: the width of the button (150)
-            // Parameter 3: the height of the button (50)
-            // Parameter 4: the state that contains the button... (this)
-            testChangeStateButton = new Button(new Point(542, 292), 240, 70, this);
 
-            /*****************************/
-            /*********** Step 2 **********/ 
-            /****** Name the button ******/
-            /*****************************/
-            testChangeStateButton.Name = "btnTest";
+            playButton = new Button(skyFall);
+            playButton.Name = "btnPlay";
+            playButton.Text = "Play Game";
 
-            /******************************/
-            /*********** Step 3 ***********/
-            /**** Set the what happens ****/
-            /******************************/
-            // Make a function that happens when the button is clicked
-            // This is the syntax.  HappensWhenTheButtonIsClicked is actually 
-            // a function, but when assigning events, you don't include parenthesis
-            testChangeStateButton.OnClick += HappensWhenTheButtonIsClicked;
+            optionsButton = new Button(skyFall);
+            optionsButton.Name = "btnOptions";
+            optionsButton.Text = "Settings";
 
-            testQuitButton = new Button(new Point(542, 390), 240, 70, this);
-            testQuitButton.Name = "btnQuit";
-            testQuitButton.OnClick += HappensWhenTheButtonIsClicked;
+            quitButton = new Button(skyFall);
+            quitButton.Name = "btnQuit";
+            quitButton.Text = "Quit";
+
+            buttons.Add(playButton);
+            buttons.Add(optionsButton);
+            buttons.Add(quitButton);
+
+            Point position = new Point(Game1.GAME_WIDTH / 2, (int)(Game1.GAME_HEIGHT / 2.8));
+
+            foreach (Button b in buttons)
+            {
+                Point offset = new Point(b.Width / 2, 0);
+                b.Position = new Point(position.X - offset.X, position.Y);
+                position.Y += b.Height + 30;
+                b.OnClick += HappensWhenTheButtonIsClicked;
+            }
         }
 
         public override void Update(GameTime gameTime)
@@ -69,22 +69,20 @@ namespace Helicopter_Hysteria.States
             base.Update(gameTime);
 
             // Insert update code here
-            testChangeStateButton.Update(gameTime);
-            testQuitButton.Update(gameTime);
+            playButton.Update(gameTime);
+            optionsButton.Update(gameTime);
+            quitButton.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
             var spriteBatch = gameRef.spriteBatch;
-            var content = gameRef.Content;
-            skyFall = content.Load<SpriteFont>("skyFall");
             spriteBatch.Begin();
             {
                 spriteBatch.Draw(titleScreen, titleRectangle, Color.White);
-                spriteBatch.DrawString(skyFall, "Start", new Vector2(550, 300), Color.Black);
-                spriteBatch.DrawString(skyFall, "Exit", new Vector2(590, 400), Color.Black);
-                testChangeStateButton.Draw(spriteBatch, gameTime);
-                testQuitButton.Draw(spriteBatch, gameTime);
+                playButton.Draw(spriteBatch, gameTime);
+                optionsButton.Draw(spriteBatch, gameTime);
+                quitButton.Draw(spriteBatch, gameTime);
                 FadeOutRect.Draw(spriteBatch, Vector2.Zero, FadeOutColor);
             }
             spriteBatch.End();
@@ -102,10 +100,12 @@ namespace Helicopter_Hysteria.States
         {
            
             var btn = (Button)sender;
-            if (btn.Name == "btnTest")
+            if (btn.Name == "btnPlay")
                 SwitchState(new IntroState(gameRef, StateManager));
             else if (btn.Name == "btnQuit")
                 gameRef.Exit();
+            else if (btn.Name == "btnOptions")
+                ; // This is not a mistake
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using GameHelperLibrary;
 using GameHelperLibrary.Shapes;
+using Microsoft.Xna.Framework.Media;
 
 namespace Helicopter_Hysteria.States
 {
@@ -30,6 +31,8 @@ namespace Helicopter_Hysteria.States
 
         public override void Update(GameTime gameTime)
         {
+            if (MediaPlayer.Volume < .3f) MediaPlayer.Volume += .01f;
+
             if (onTime < maxTime)
                 onTime += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             else

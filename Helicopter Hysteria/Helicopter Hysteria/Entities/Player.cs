@@ -273,7 +273,7 @@ namespace Helicopter_Hysteria.Entities
 
             // Default weapons will be Pistols.  If you wanna change it, go ahead
             // ------------------------------------------------------------------
-            equippedWeapon = new Pistol(this, shootingKey);
+            equippedWeapon = new Shotgun(this, shootingKey);
 
             // This font is used for the player information that is on screen
             // --------------------------------------------------------------

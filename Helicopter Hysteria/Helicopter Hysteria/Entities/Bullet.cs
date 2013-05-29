@@ -18,7 +18,14 @@ namespace Helicopter_Hysteria.Entities
         private float angle = 0.0f;
         private bool homing = false;
 
+        // The bullet should explode with a sound effect and sparks
+        // --------------------------------------------------------
         public bool DestroyMe { get; set; }
+
+        // The bullet should be removed without a trace
+        // --------------------------------------------
+        public bool RemoveMe { get; set; }
+
         public Vector2 Origin { get; set; }
 
         private Color tint = Color.White;
@@ -77,7 +84,7 @@ namespace Helicopter_Hysteria.Entities
             
             if (pos.X < -width  || pos.X > Game1.GAME_WIDTH ||
                 pos.Y < -height || pos.Y > Game1.GAME_HEIGHT)
-                DestroyMe = true;
+                RemoveMe = true;
         }
 
         public override void Draw(SpriteBatch batch, GameTime gametime)

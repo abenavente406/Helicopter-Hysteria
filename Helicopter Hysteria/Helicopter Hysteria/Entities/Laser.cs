@@ -38,7 +38,7 @@ namespace Helicopter_Hysteria.Entities
 
         public override void Update(GameTime gameTime)
         {
-            this.pos = owner.Position - new Vector2(width, 0);
+            this.pos = owner.Direction < 0 ? owner.Position - new Vector2(width, 0) : owner.Position;
         }
 
         public override void Draw(SpriteBatch batch, GameTime gametime)

@@ -199,6 +199,70 @@
       <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Pixel.xnb</Output>
       <Time>2013-05-27T16:50:26.1788657-04:00</Time>
     </Item>
+    <Item>
+      <Source>SFX\baseShot.wav</Source>
+      <Name>SFX\baseShot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\baseShot.xnb</Output>
+      <Time>2013-05-28T22:50:37.2261069-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\missileShot.wav</Source>
+      <Name>SFX\missileShot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\missileShot.xnb</Output>
+      <Time>2013-05-28T23:14:46.8520207-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\boom.wav</Source>
+      <Name>SFX\boom</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\boom.xnb</Output>
+      <Time>2013-05-28T23:08:13.6025281-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\bulletHit.wav</Source>
+      <Name>SFX\bulletHit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\bulletHit.xnb</Output>
+      <Time>2013-05-28T23:11:27.6766285-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\shotgunShot.wav</Source>
+      <Name>SFX\shotgunShot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\shotgunShot.xnb</Output>
+      <Time>2013-05-28T23:21:15.2662367-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\powerUp.wav</Source>
+      <Name>SFX\powerUp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\powerUp.xnb</Output>
+      <Time>2013-05-28T23:41:46.3720607-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\The Recon Mission.mp3</Source>
+      <Name>SFX\The Recon Mission</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\The Recon Mission.xnb</Output>
+      <Extra>C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\The Recon Mission.wma</Extra>
+      <Time>2013-05-28T23:51:58.0696914-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2E1EE5F0-8F25-4798-A7FC-FAF82D646BB7}</ContentProjectGUID>

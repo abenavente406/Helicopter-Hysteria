@@ -21,6 +21,7 @@ namespace Helicopter_Hysteria
         public static GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
         GameStateManager manager;
+        SoundManager sfxManager;
 
         public Game1()
         {
@@ -38,6 +39,9 @@ namespace Helicopter_Hysteria
 
             Components.Add(new InputHandler(this));
 
+            sfxManager = new SoundManager(this);
+            Components.Add(sfxManager);
+
             manager = new GameStateManager(this);
             Components.Add(manager);
             manager.ChangeState(new TitleState(this, manager));
@@ -50,6 +54,7 @@ namespace Helicopter_Hysteria
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            SoundManager.PlaySong(SoundManager.ThemeMusic);
         }
 
         protected override void UnloadContent()

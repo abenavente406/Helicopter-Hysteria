@@ -22,6 +22,7 @@ namespace Helicopter_Hysteria.Weapons
 
         protected override void OnFire(Player sender, EventArgs e)
         {
+            SoundManager.MissileLaunchInstance.Play();
             Shoot();
         }
     }

@@ -12,7 +12,7 @@ namespace Helicopter_Hysteria.Weapons
     public class Shotgun : Weapon
     {
         public Shotgun(Player owner, Keys shootKey)
-            : base(owner, shootKey, 10f, 50f) { }
+            : base(owner, shootKey, 30f, 600f) { }
 
         protected override void SetBulletTexture()
         {
@@ -21,8 +21,8 @@ namespace Helicopter_Hysteria.Weapons
 
         protected override void OnFire(Player sender, EventArgs e)
         {
-            if (!fired)
-                Shoot();
+            SoundManager.ShotgunShotInstance.Play();
+            Shoot();
         }
 
         public override void Shoot()

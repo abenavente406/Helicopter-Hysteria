@@ -28,3 +28,11 @@ C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopte
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Half Circle.xnb
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Lightning Segment.xnb
 C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\Weather\Pixel.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\baseShot.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\missileShot.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\boom.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\bulletHit.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\shotgunShot.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\powerUp.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\The Recon Mission.xnb
+C:\Users\Anthony Benavente\Git\Helicopter-Hysteria\Helicopter Hysteria\Helicopter Hysteria\bin\x86\Debug\Content\SFX\The Recon Mission.wma

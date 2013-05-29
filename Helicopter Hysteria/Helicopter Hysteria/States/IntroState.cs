@@ -85,9 +85,12 @@ namespace Helicopter_Hysteria.States
 
             for (int i = 0; i < 5; i++)
             {
-                var button = new Button(startPoint, 150, 100, this);
+                var button = new Button(skyFallFont);
+                button.Position = startPoint;
+                button.Width = 150;
+                button.Height = 100;
                 button.Name = buttonNames[i];
-                button.Background = backgrounds[i];
+                button.BackgroundImage = backgrounds[i];
                 button.OnClick += screenImage;
                 buttons.Add(button);
                 startPoint.X += 200;
@@ -96,11 +99,14 @@ namespace Helicopter_Hysteria.States
             startPoint = new Point(50, 200);
             for (int i = 5; i < 9; i++)
             {
-                var button = new Button(startPoint, 70, 70, this);
-                button.Background = backgrounds[5];
+                var button = new Button(skyFallFont);
+                button.Position = startPoint;
+                button.Width = 70;
+                button.Height = 70;
+                button.BackgroundImage = backgrounds[5];
                 button.Name = buttonNames[i];
                 button.OnClick += colorChange;
-                button.Flipped = buttonNames[i].ToLower().Contains("left");
+                button.FlipImage = buttonNames[i].ToLower().Contains("left");
                 buttons.Add(button);
                 startPoint.X += 600;
                 if (buttonNames[i].Equals("player2Left"))

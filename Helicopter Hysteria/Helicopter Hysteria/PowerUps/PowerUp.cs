@@ -61,6 +61,7 @@ namespace Helicopter_Hysteria
                         active = true;
                         owner = p;
                         OnEffectStart(owner, null);
+                        SoundManager.PowerUpInstance.Play();
                     }
                 }
             }

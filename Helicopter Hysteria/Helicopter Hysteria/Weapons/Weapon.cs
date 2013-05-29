@@ -148,15 +148,19 @@ namespace Helicopter_Hysteria.Weapons
                     // If the gun is a missile launcher, make an explosion on impact
                     if (this.GetType() == typeof(MissileLauncher))
                     {
+                        SoundManager.Boom.Play();
                         EffectManager.AddExplosion(b.Position, Vector2.Zero, 15, 20, 4, 6, 40f, 50, new Color(1.0f, 0.3f, 0f, 0.5f), Color.Black * 0f);
                     }
                     // Otherwise, make sparks
                     else
                     {
+                        SoundManager.Hit.Play();
                         EffectManager.AddSparksEffect(b.Position, new Vector2(400));
                     }
-                    bullets.Remove(b);
                 }
+
+                if (b.DestroyMe || b.RemoveMe)
+                    bullets.Remove(b);
             });
         }
         #endregion

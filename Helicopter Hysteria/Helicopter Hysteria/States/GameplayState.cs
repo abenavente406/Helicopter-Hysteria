@@ -8,6 +8,7 @@ using Helicopter_Hysteria.Entities;
 using Microsoft.Xna.Framework.Graphics;
 using GameHelperLibrary.Shapes;
 using Helicopter_Hysteria.Weather;
+using Microsoft.Xna.Framework.Media;
 
 namespace Helicopter_Hysteria.States
 {
@@ -17,7 +18,6 @@ namespace Helicopter_Hysteria.States
         private static Texture2D backgroundImage;
         private static PowerUpMgr powerUpMgr;
         private Texture2D backgroundoverlay;
-        private Color bgColor;
         private int elapsed = 0;
         private int secondsToWeatherChange = 0;
         private Random rand = new Random();
@@ -39,25 +39,13 @@ namespace Helicopter_Hysteria.States
             
         }
 
-        protected override void LoadContent()
+        public override void Initialize()
         {
-            Art.Load(gameRef.Content);
+            base.Initialize();
 
-            base.LoadContent();
-
-            backgroundoverlay = new DrawableRectangle(GraphicsDevice, new Vector2(Game1.GAME_WIDTH, Game1.GAME_HEIGHT), Color.White, true).Texture;
-
+            players.Clear();
             players.Add(new Player(PlayerIndex.One));
             players.Add(new Player(PlayerIndex.Two));
-
-            SpriteSheet explosionSs = new SpriteSheet(content.Load<Texture2D>("explosion"), 32, 32, gameRef.GraphicsDevice);
-            Texture2D[] imgs = new Texture2D[] { 
-                explosionSs.GetSubImage(0, 0),
-                explosionSs.GetSubImage(1, 0),
-                explosionSs.GetSubImage(2, 0)
-            };
-            var explode = new Animation(imgs);
-            EffectManager.Initialize(content.Load<Texture2D>("particle"), explode);
 
             WeatherManager.Initialize(gameRef);
             WeatherManager.ChangeWeather(Weather.Weather.NORMAL);
@@ -67,9 +55,29 @@ namespace Helicopter_Hysteria.States
             secondsToWeatherChange = rand.Next(40000, 80000);
         }
 
+        protected override void LoadContent()
+        {
+            base.LoadContent();
+
+            Art.Load(gameRef.Content);
+
+            backgroundoverlay = new DrawableRectangle(GraphicsDevice, new Vector2(Game1.GAME_WIDTH, Game1.GAME_HEIGHT), Color.White, true).Texture;
+
+            SpriteSheet explosionSs = new SpriteSheet(content.Load<Texture2D>("explosion"), 32, 32, gameRef.GraphicsDevice);
+            Texture2D[] imgs = new Texture2D[] { 
+                explosionSs.GetSubImage(0, 0),
+                explosionSs.GetSubImage(1, 0),
+                explosionSs.GetSubImage(2, 0)
+            };
+            var explode = new Animation(imgs);
+            EffectManager.Initialize(content.Load<Texture2D>("particle"), explode);
+        }
+
         public override void Update(GameTime gameTime)
        {
             base.Update(gameTime);
+
+            if (MediaPlayer.Volume > .1f) MediaPlayer.Volume -= .01f;
 
             elapsed += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
             if (elapsed >= secondsToWeatherChange)
@@ -92,7 +100,7 @@ namespace Helicopter_Hysteria.States
 
             EffectManager.Update(gameTime);
             WeatherManager.Update(gameTime);
-            powerUpMgr.Update(gameTime);;
+            powerUpMgr.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
@@ -109,8 +117,8 @@ namespace Helicopter_Hysteria.States
                     p.Draw(batch, gameTime);
                 });
                 batch.Draw(backgroundoverlay, Vector2.Zero, WeatherManager.BgColor);
-                EffectManager.Draw(batch, gameTime);
                 WeatherManager.Draw(batch, gameTime);
+                EffectManager.Draw(batch, gameTime);
                 FadeOutRect.Draw(batch, Vector2.Zero, FadeOutColor);
             }
             batch.End();
