@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Art.cs" />
+    <Compile Include="Entities\ComputerPlayer.cs" />
     <Compile Include="Entities\Laser.cs" />
     <Compile Include="SoundManager.cs" />
     <Compile Include="Weapons\LaserGun.cs" />

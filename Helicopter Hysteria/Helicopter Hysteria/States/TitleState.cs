@@ -14,7 +14,8 @@ namespace Helicopter_Hysteria.States
 {
     public class TitleState : BaseGameState
     {
-        Button playButton;
+        Button playButton1;
+        Button playButton2;
         Button optionsButton;
         Button quitButton;
         Texture2D titleScreen;
@@ -37,9 +38,13 @@ namespace Helicopter_Hysteria.States
             titleScreen = content.Load<Texture2D>("titleScreen copy");
             titleRectangle = new Rectangle(0, 0, Game1.GAME_WIDTH, Game1.GAME_HEIGHT);
 
-            playButton = new Button(skyFall);
-            playButton.Name = "btnPlay";
-            playButton.Text = "Play Game";
+            playButton1 = new Button(skyFall);
+            playButton1.Name = "btnPlay1";
+            playButton1.Text = "Single Player";
+
+            playButton2 = new Button(skyFall);
+            playButton2.Name = "btnPlay2";
+            playButton2.Text = "Multiplayer";
 
             optionsButton = new Button(skyFall);
             optionsButton.Name = "btnOptions";
@@ -49,7 +54,8 @@ namespace Helicopter_Hysteria.States
             quitButton.Name = "btnQuit";
             quitButton.Text = "Quit";
 
-            buttons.Add(playButton);
+            buttons.Add(playButton1);
+            buttons.Add(playButton2);
             buttons.Add(optionsButton);
             buttons.Add(quitButton);
 
@@ -68,10 +74,7 @@ namespace Helicopter_Hysteria.States
         {
             base.Update(gameTime);
 
-            // Insert update code here
-            playButton.Update(gameTime);
-            optionsButton.Update(gameTime);
-            quitButton.Update(gameTime);
+            buttons.ForEach(b => b.Update(gameTime));
         }
 
         public override void Draw(GameTime gameTime)
@@ -80,9 +83,7 @@ namespace Helicopter_Hysteria.States
             spriteBatch.Begin();
             {
                 spriteBatch.Draw(titleScreen, titleRectangle, Color.White);
-                playButton.Draw(spriteBatch, gameTime);
-                optionsButton.Draw(spriteBatch, gameTime);
-                quitButton.Draw(spriteBatch, gameTime);
+                buttons.ForEach(b => b.Draw(spriteBatch, gameTime));                
                 FadeOutRect.Draw(spriteBatch, Vector2.Zero, FadeOutColor);
             }
             spriteBatch.End();
@@ -100,8 +101,10 @@ namespace Helicopter_Hysteria.States
         {
            
             var btn = (Button)sender;
-            if (btn.Name == "btnPlay")
+            if (btn.Name == "btnPlay2")
                 SwitchState(new IntroState(gameRef, StateManager));
+            else if (btn.Name == "btnPlay1")
+                SwitchState(new GameplayState(gameRef, StateManager, true));
             else if (btn.Name == "btnQuit")
                 gameRef.Exit();
             else if (btn.Name == "btnOptions")

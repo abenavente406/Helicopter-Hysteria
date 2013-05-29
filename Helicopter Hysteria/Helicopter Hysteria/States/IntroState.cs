@@ -21,7 +21,8 @@ namespace Helicopter_Hysteria.States
         private SpriteFont skyFallFont;
         private Random rand = new Random();
         private Rectangle helicopter1, helicopter2;
-        public static Color player1Color, player2Color;
+        public static Color player1Color = Color.White;
+        public static Color player2Color = Color.LightBlue;
         int player1num = 0;
         int player2num = 0;
 
@@ -182,7 +183,7 @@ namespace Helicopter_Hysteria.States
                         break;
                     }
             }
-            SwitchState(new GameplayState(gameRef, StateManager));
+            SwitchState(new GameplayState(gameRef, StateManager, false));
         }
         public Texture2D generateRandom()
         {

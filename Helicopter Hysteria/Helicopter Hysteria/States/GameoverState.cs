@@ -31,7 +31,7 @@ namespace Helicopter_Hysteria.States
 
         public override void Update(GameTime gameTime)
         {
-            if (MediaPlayer.Volume < .3f) MediaPlayer.Volume += .01f;
+            if (MediaPlayer.Volume < .3f) MediaPlayer.Volume += .001f;
 
             if (onTime < maxTime)
                 onTime += (float)gameTime.ElapsedGameTime.TotalMilliseconds;

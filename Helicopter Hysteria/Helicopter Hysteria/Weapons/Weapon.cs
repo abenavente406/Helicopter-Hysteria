@@ -120,7 +120,8 @@ namespace Helicopter_Hysteria.Weapons
 
             // If the shoot key is pressed or the Xbox trigger is pulled
             // ---------------------------------------------------------
-            if (InputHandler.KeyDown(shootKey) || InputHandler.ButtonDown(Buttons.RightTrigger, owner.PlayerIndex))
+            if (InputHandler.KeyDown(shootKey) || InputHandler.ButtonDown(Buttons.RightTrigger, owner.PlayerIndex) ||
+                owner.GetType() == typeof(ComputerPlayer))
             {
                 // Only shoot if the gun is cooled down
                 if (coolDownTimeTicks < 0)

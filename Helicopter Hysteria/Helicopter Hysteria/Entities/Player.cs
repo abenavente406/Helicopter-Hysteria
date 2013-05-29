@@ -29,7 +29,7 @@ namespace Helicopter_Hysteria.Entities
         private float maxspeed = 5.0f;
         private float angle = 0.0f;
 
-        private Weapon equippedWeapon;
+        public Weapon equippedWeapon;
         private Vector2 gunPos;
 
         // Organize input keys into variables for resusability
@@ -45,15 +45,15 @@ namespace Helicopter_Hysteria.Entities
 
         // Variables that are changed with power ups
         // -----------------------------------------
-        private bool superSpeed = false;    // Speed goes up
-        private bool tracking = false;      // Bullets seek other players
-        private bool forceField = false;    // Force field blocks damage
+        protected bool superSpeed = false;    // Speed goes up
+        protected bool tracking = false;      // Bullets seek other players
+        protected bool forceField = false;    // Force field blocks damage
 
         // Force field stuffs
         // ------------------
-        private int forceFieldWidth = 0;
-        private int forceFieldHeight = 0;
-        private Texture2D forceFieldTex;
+        protected int forceFieldWidth = 0;
+        protected int forceFieldHeight = 0;
+        protected Texture2D forceFieldTex;
         #endregion
 
         #region Properties
@@ -425,7 +425,7 @@ namespace Helicopter_Hysteria.Entities
         /// <summary>
         /// Handles key inputs from the player
         /// </summary>
-        private void HandleInput()
+        protected virtual void HandleInput()
         {
             // Instead of changing pos directly, make it look nice by changing velocity
             var newVelocity = Vector2.Zero;

@@ -12,7 +12,7 @@ namespace Helicopter_Hysteria.States
     public class DevGameplayState : GameplayState
     {
         public DevGameplayState(Game game, GameStateManager manager)
-            : base(game, manager) { }
+            : base(game, manager, false) { }
 
         protected override void LoadContent()
         {

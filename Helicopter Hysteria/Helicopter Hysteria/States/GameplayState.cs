@@ -14,6 +14,7 @@ namespace Helicopter_Hysteria.States
 {
     public class GameplayState : BaseGameState
     {
+        private bool singlePlayer = false;
         private static List<Player> players = new List<Player>();
         private static Texture2D backgroundImage;
         private static PowerUpMgr powerUpMgr;
@@ -33,10 +34,10 @@ namespace Helicopter_Hysteria.States
             set { backgroundImage = value; }
         }
 
-        public GameplayState(Game game, GameStateManager manager)
+        public GameplayState(Game game, GameStateManager manager, bool singlePlayer)
             : base(game, manager)
         {
-            
+            this.singlePlayer = singlePlayer;
         }
 
         public override void Initialize()
@@ -45,7 +46,11 @@ namespace Helicopter_Hysteria.States
 
             players.Clear();
             players.Add(new Player(PlayerIndex.One));
-            players.Add(new Player(PlayerIndex.Two));
+
+            if (singlePlayer)
+                players.Add(new ComputerPlayer());
+            else
+                players.Add(new Player(PlayerIndex.Two));
 
             WeatherManager.Initialize(gameRef);
             WeatherManager.ChangeWeather(Weather.Weather.NORMAL);
@@ -71,13 +76,16 @@ namespace Helicopter_Hysteria.States
             };
             var explode = new Animation(imgs);
             EffectManager.Initialize(content.Load<Texture2D>("particle"), explode);
+
+            if (singlePlayer)
+                backgroundImage = content.Load<Texture2D>("Screen Images\\apocalypselondon");
         }
 
         public override void Update(GameTime gameTime)
        {
             base.Update(gameTime);
 
-            if (MediaPlayer.Volume > .1f) MediaPlayer.Volume -= .01f;
+            if (MediaPlayer.Volume > .1f) MediaPlayer.Volume -= .001f;
 
             elapsed += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
             if (elapsed >= secondsToWeatherChange)
